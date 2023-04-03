@@ -2,7 +2,8 @@
 """
 Created on Wed Mar  8 11:14:19 2023
 
-@author: ethan
+@author: Ethan Houser
+
 """
 
 import numpy as np
@@ -19,13 +20,8 @@ from sklearn.model_selection import train_test_split
 ##########################
 
 M = 30                      # Replications
-trainSize = 0.8             # Size of Training Set
-testSize = 1- trainSize     # Size of Testing Set
-
 random.seed(123)
-seedsM = random.sample(range(1000), M)      #Create CRN stream
-
-modelType = 1       #0 = Linear Regression, 1 = Logistic Regression
+seedsM = random.sample(range(1000), 1000)      #Create CRN stream
 
 ##########################
 ## Defining Functions
@@ -51,7 +47,7 @@ def fitLinearReg(trainX, testX, trainY, testY):
     return MAE, MSE, RMSE
 
 def optimalThreshold_Gmeans(yTest, yPredProba):
-    fpr, tpr, thresholds = roc_curve(yTest, yPredProba)
+    fpr, tpr, thresholds = roc_curve(yTest, yPredProba)  ## Implement All vs One Strategy
     gmeans = np.sqrt(tpr * (1-fpr))
     optThreshIndex = gmeans.argmax()
     optThresh = thresholds[optThreshIndex]
@@ -59,8 +55,13 @@ def optimalThreshold_Gmeans(yTest, yPredProba):
 
 def fitLogReg(trainX, testX, trainY, testY):
     
+    if len(np.unique(trainY))==2:
+        model = LogisticRegression()
+    elif len(np.unique(trainY))>2:
+        model = LogisticRegression(multi_class='multinomial', solver='lbfgs')
+    
     # Build Training Model
-    model = LogisticRegression()    
+  
     model.fit(trainX, trainY)
     
     # Make Predictions
@@ -92,73 +93,4 @@ def fitLogReg(trainX, testX, trainY, testY):
     MSE = metrics.mean_squared_error(testY, yPred)              #Mean Squared Error
     RMSE = np.sqrt(metrics.mean_squared_error(testY, yPred))    #Roo Mean Squared Error
     return MAE, MSE, RMSE
-
-#Load the data
-#data = pd.read_excel("C:\\Users\\ethan\\Downloads\\ScreeningData_LR.xlsx")
-data = pd.read_excel("C:\\Users\\ethan\\Downloads\\ScreeningData_LogReg.xlsx")
-
-#Create X and Y Datasets
-dataX = data.iloc[:,1:]
-dataY = data["y"]
-
-all_result = []
-
-#List of Variables
-varvar = list(range(0,10))
-
-colNames = ["Statistic"]+[str("Itr "+str(i+1)) for i in range(M)]
-
-if modelType == 0:
-    results = pd.DataFrame(data=None, columns=colNames)
-    results.iloc[:,0] = ["MAE", "MSE", "RMSE"]
-elif modelType == 1:
-    results = pd.DataFrame(data=None, columns=colNames)
-    results.iloc[:,0] = ["F1 Score", "F2 Score", "F3 Score", "F4 Score", "Precision", "Recall"]
-
-
-m=0
-for m in range(M):
-    
-    # Build Train and Test Datasets
-    trainX, testX, trainY, testY = train_test_split(dataX.iloc[:,varvar], dataY, test_size = 0.2, random_state=seedsM[m])
-    
-    if modelType == 0:      # Linear Regression Model
-    
-        tempMAE, tempMSE, tempRMSE = fitLinearReg(trainX, testX, trainY, testY)
-        
-        results.iloc[0,m+1] = tempMAE
-        results.iloc[1,m+1] = tempMSE
-        results.iloc[2,m+1] = tempRMSE
-        
-    elif modelType == 1:    # Logistic Regression Model
-        f1_score, f2_score, f3_score, f4_score, precision, recall = fitLogReg(trainX, testX, trainY, testY)
-        tempData = [f1_score, f2_score, f3_score, f4_score, precision, recall]
-        results.iloc[:, m+1] = tempData
-        
-
-##########################
-## Averaging Results
-##########################
-
-if modelType == 0:    
-    print("Average MAE:", round(statistics.mean(results.iloc[0,1:]), 3))
-    print("Average MSE:", round(statistics.mean(results.iloc[1,1:]), 3))
-    print("Average RMSE:", round(statistics.mean(results.iloc[2,1:]), 3))    
-elif modelType == 1:
-    print("Average F1 Score", round(statistics.mean(results.iloc[0,1:]),3))
-    print("Average F2 Score", round(statistics.mean(results.iloc[1,1:]),3))
-    print("Average F3 Score", round(statistics.mean(results.iloc[2,1:]),3))
-    print("Average F4 Score", round(statistics.mean(results.iloc[3,1:]),3))
-    print("Average Precision", round(statistics.mean(results.iloc[4,1:]),3))
-    print("Average Recall", round(statistics.mean(results.iloc[5,1:]),3))
-
-
-
-
-
-
-
-
-
-
 
