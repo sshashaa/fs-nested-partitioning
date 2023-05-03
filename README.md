@@ -42,7 +42,7 @@ First of all, we should confess that the name could have been selected more care
 
 First step is checking the entropy;
 <p align="center">
-<img width="500" src="https://github.com/sshashaa/fs-nested-partitioning/tree/main/Figures/entropy.PNG">
+<img width="500" src="https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/entropy.PNG">
 </p>
 
 ## Refrences
