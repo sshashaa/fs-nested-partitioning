@@ -29,5 +29,4 @@ This repository will provide the code for feature selection using Intelliegence 
 
 
 Refrences:
-[1] S. Ólafsson and J. Yang, “Intelligent partitioning for feature selection,” INFORMS
-Journal on Computing, vol. 17, no. 3, pp. 339–355, 2005.
+[1] S. Ólafsson and J. Yang, “Intelligent partitioning for feature selection,” INFORMS Journal on Computing, vol. 17, no. 3, pp. 339–355, 2005.
