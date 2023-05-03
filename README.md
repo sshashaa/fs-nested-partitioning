@@ -38,8 +38,9 @@ As you can see this approach is not object oriented, and is not a good practice.
 This script mimics the algorithm provided by [1] in python. For furthur information about the functions and objective we reffere you to read the paper by Ólafsson and Yang, sicne we used the exact terminalogy used in their paper.
 
 ### Greedy Feature Selection.ipynb
-First of all, we should confess that the name could have been selected better, since our proposed algorithm is not greedy heuristic. And it will use the modified version of [1] using rapid screening. This script provides the code for feature selection using Intelliegence Nested Patitioning with Rapid Screening. To do so we first run the "RapindScreeing.py" in order to be get the intelligent sence of the features whcih are our ture features and should be included in prediction model. We will go through the functions of each file one-by-one in one example to make it clear for the reader.
+First of all, we should confess that the name could have been selected more carefully, since our proposed algorithm is not greedy heuristic, and it uses the modified version of [1] using rapid screening. This script provides the code for feature selection using Intelliegence Nested Patitioning with Rapid Screening. To do so we first run the "RapindScreeing.py" in order to be get the intelligent sence of the features whcih are our ture features and should be included in prediction model. We will go through the functions of each file one-by-one in one example to make it clear for the reader.
 
+First step is checking the entropy;
 
 
 ## Refrences
