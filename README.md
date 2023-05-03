@@ -41,9 +41,7 @@ This script mimics the algorithm provided by [1] in python. For furthur informat
 First of all, we should confess that the name could have been selected more carefully, since our proposed algorithm is not greedy heuristic, and it uses the modified version of [1] using rapid screening. This script provides the code for feature selection using Intelliegence Nested Patitioning with Rapid Screening. To do so we first run the "RapindScreeing.py" in order to be get the intelligent sence of the features whcih are our ture features and should be included in prediction model. We will go through the functions of each file one-by-one in one example to make it clear for the reader.
 
 First step is checking the entropy;
-<p align="center">
-<img width="500" src="https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/entropy.PNG">
-</p>
+https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/entropy.PNG
 
 ## Refrences
 [1] S. Ólafsson and J. Yang, “Intelligent partitioning for feature selection,” INFORMS Journal on Computing, vol. 17, no. 3, pp. 339–355, 2005.
