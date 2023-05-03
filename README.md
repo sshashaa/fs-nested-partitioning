@@ -74,6 +74,9 @@ The above illustration is for pure NP, when the sampling distribution is not aff
 ![alt text](https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/ii3.PNG)
 ---------------
 
+It should be noted that in this version of the code we consider the weight of 1 for updateing the probabality vector, one potential idea is using the difference of MSE between in each node to update the probablity:
+$P \gets \frac{MSE_t - MSE_{t-1}}{MSE_{t-1}} * P$
+
 ## Refrences
 [1] S. Ólafsson and J. Yang, “Intelligent partitioning for feature selection,” INFORMS Journal on Computing, vol. 17, no. 3, pp. 339–355, 2005.
 [2] J. Pichitlamken and B. L. Nelson, “A combined procedure for optimization via simulation,” ACM Transactions on Modeling and Computer Simulation (TOMACS), vol. 13, no. 2, pp. 155–179, 2003
