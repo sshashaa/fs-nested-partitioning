@@ -63,7 +63,8 @@ After that, the function creates a linear regression object and fits the model u
 
 ![alt text](https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/i1.PNG)
 ![alt text](https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/i2.PNG)
-![alt text](https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/i3.PNG)
+
+The above illustration is for pure NP, when the sampling distribution is not affected by knowledge gained by each iteration. We may be able to update the sampling distribution by the knowledge gained in each iteration.
 
 
 ## Refrences
