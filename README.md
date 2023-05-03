@@ -1,2 +1,5 @@
-# fs-nested-partitioning
-solving feature selection for large datasets with simulation optimization using nested partitioning
+# Feature Selection with Nested Patitioning
+## Introduction
+Feature selection is a crucial step in machine learning that involves identifying the most relevant features in a dataset. However, when dealing with large datasets, traditional feature selection methods can become computationally expensive and inefficient. To address this issue, simulation optimization using nested partitioning has emerged as a promising technique for feature selection in large datasets. This method involves simulating different feature subsets and optimizing them using nested partitioning algorithms. By doing so, it allows for a more efficient and effective feature selection process, enabling better predictive performance and improved model interpretability. In this article, we will explore the concept of solving feature selection for large datasets using simulation optimization using nested partitioning.
+
+This repository will provide the code for feature selection using Intelliegence Nested Patitioning with Rapid Screening.
