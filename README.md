@@ -2,11 +2,11 @@
 ## Introduction
 Feature selection is a crucial step in machine learning that involves identifying the most relevant features in a dataset. However, when dealing with large datasets, traditional feature selection methods can become computationally expensive and inefficient. To address this issue, simulation optimization using nested partitioning has emerged as a promising technique for feature selection in large datasets. This method involves simulating different feature subsets and optimizing them using nested partitioning algorithms. By doing so, it allows for a more efficient and effective feature selection process, enabling better predictive performance and improved model interpretability. In this article, we will explore the concept of solving feature selection for large datasets using simulation optimization using nested partitioning.
 
-The feature selection problem can be seen as a combinatorial optimization problem, according to the Introduction. To address this problem, we adopt Olafsson and Yang's optimization-based feature selection method [1], which utilizes the nested partitions (NP) metaheuristic for combinatorial optimization. The success of the NP metaheuristic relies on a partitioning scheme that applies an application-specific structure to the search space. Olafsson and Yang \cite{olafsson2005intelligent} have devised a method for intelligently partitioning the feature subset space, and their approach has proven to be effective when compared to other feature selection methods.
+The feature selection problem can be seen as a combinatorial optimization problem, according to the Introduction. To address this problem, we adopt Olafsson and Yang's optimization-based feature selection method [1], which utilizes the nested partitions (NP) metaheuristic for combinatorial optimization. The success of the NP metaheuristic relies on a partitioning scheme that applies an application-specific structure to the search space. Olafsson and Yang have devised a method for intelligently partitioning the feature subset space, and their approach has proven to be effective when compared to other feature selection methods.
 
-To understand the methodology, we need to familiarize ourselves with the nested partition method, which was developed to tackle combinatorial optimization problems. For the feature selection problem, the feasible region is the collection of all possible feature subsets \cite{pichitlamken2003combined}.
+To understand the methodology, we need to familiarize ourselves with the nested partition method, which was developed to tackle combinatorial optimization problems. For the feature selection problem, the feasible region is the collection of all possible feature subsets [2].
 
-$\Omega = \{{a_1, a_2, ..., a_n \mid a_i \in {0, 1}}\}$
+$\Omega = {{a_1, a_2, ..., a_n \mid a_i \in {0, 1}}}$
 
 where $a_i$ is 1, if the $i^{th}$ attribute is selected.
 
@@ -30,3 +30,4 @@ This repository will provide the code for feature selection using Intelliegence 
 
 Refrences:
 [1] S. Ólafsson and J. Yang, “Intelligent partitioning for feature selection,” INFORMS Journal on Computing, vol. 17, no. 3, pp. 339–355, 2005.
+[2] J. Pichitlamken and B. L. Nelson, “A combined procedure for optimization via simulation,” ACM Transactions on Modeling and Computer Simulation (TOMACS), vol. 13, no. 2, pp. 155–179, 2003
