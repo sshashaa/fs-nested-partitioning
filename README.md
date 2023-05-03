@@ -50,7 +50,7 @@ probVector: A list of probabilities, where each probability represents the likel
 The function generates n solutions and returns them as a list of lists. Each solution is represented as a list of binary values (0 or 1) with the same length as the probVector list.
 
 The function iterates over the range of n and for each iteration, it generates a solution by creating a new list and appending binary values using the bernoulli() method from the scipy.stats module. The bernoulli() method generates a random binary value (0 or 1) based on the probability of selecting a particular feature. The probability of selecting each feature is specified by the probVector list.
---------------------
+
 The "modelFit(solutionList)" function takes a list of solutions as input and returns the average mean squared error (MSE) of the linear regression model fitted on each of the solutions in the input list.
 
 The function first reads a dataset from a CSV file "GenData_LinReg.csv" using pandas and stores it in a dataframe named df.
@@ -60,8 +60,11 @@ Then, for each solution in the input list, the function splits the dataset into 
 Next, the function selects only those columns from the training and testing sets that correspond to the binary values of the current solution. This is done by converting the binary list to a list of column indices using a list comprehension, and then using the iloc indexing function to select columns based on the list of column indices.
 
 After that, the function creates a linear regression object and fits the model using the training data. It then makes predictions on the test data and calculates the mean squared error (MSE) using the mean_squared_error() method from scikit-learn. For each solution in the input list, the function appends the calculated MSE to a list called mseList.
---------------------
+
 ![alt text](https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/i1.PNG)
+![alt text](https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/i2.PNG)
+![alt text](https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/i3.PNG)
+
 
 ## Refrences
 [1] S. Ólafsson and J. Yang, “Intelligent partitioning for feature selection,” INFORMS Journal on Computing, vol. 17, no. 3, pp. 339–355, 2005.
