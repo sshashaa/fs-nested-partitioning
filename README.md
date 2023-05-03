@@ -20,6 +20,10 @@ $MSE = \frac{1}{n} \sum(y_i - \bar{y})^2$
 where n is the number of observations, $y_i$ is the predicted value for the i-th observation, and $\bar{y}$ is the mean of the predicted values for all observations.
 
 ## Code Description
+### FSwNP.ipynb
+This is our first attempt to provide new idea for feature selection by updating the probablities of chooosing a feature in our sampling, later we decided to move to more systematic system by [1], and we did not used this script anymore.
+
+The last line 'loss_calculator(df,a=[1,1,1,1])' calls the loss_calculator() function with the df DataFrame and a list of coefficients [1,1,1,1] as inputs, which calculates and returns the loss. This line doesn't update the df DataFrame in place, and so calling df.head() doesn't show the updated DataFrame with the new Loss column.
 This repository will provide the code for feature selection using Intelliegence Nested Patitioning with Rapid Screening. To do so we first run the "RapindScreeing.py" in order to be get the intelligent sence of the features whcih are our ture features and should be included in prediction model. We will gor through the functions of each file one-by-one and bring and example to make it clear for the reader.
 
 
