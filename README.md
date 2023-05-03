@@ -66,6 +66,9 @@ After that, the function creates a linear regression object and fits the model u
 
 The above illustration is for pure NP, when the sampling distribution is not affected by knowledge gained by each iteration. We may be able to update the sampling distribution by the knowledge gained in each iteration.
 
+![alt text](https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/ii1.PNG)
+![alt text](https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/ii2.PNG)
+![alt text](https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/ii3.PNG)
 
 ## Refrences
 [1] S. Ólafsson and J. Yang, “Intelligent partitioning for feature selection,” INFORMS Journal on Computing, vol. 17, no. 3, pp. 339–355, 2005.
