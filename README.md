@@ -15,7 +15,7 @@ where $a_i$ is 1, if the $i^{th}$ attribute is selected.
 
 Since the dataset does not have any class, then we cannot use the information gain formula as it requires a class variable to compute. However, if we have other categorical or continuous variables in the dataset, you could use them to create a split and calculate the information gain for each split. Alternatively, we use another splitting criterion, such as mean squared error (MSE), to split the data and create decision trees. These methods do not require a class variable and can be used for unsupervised learning problems. The formula for MSE is:
 
-$MSE = \sum_{i=1}^{n}(y_i - \bar{y})^2$
+$MSE = \frac{1}{n} \sum(y_i - \bar{y})^2$
 
 where n is the number of observations, $y_i$ is the predicted value for the i-th observation, and $\bar{y}$ is the mean of the predicted values for all observations.
 
