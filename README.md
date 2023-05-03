@@ -35,9 +35,10 @@ This is our first attempt to provide new idea for feature selection by updating 
 As you can see this approach is not object oriented, and is not a good practice. So we later code the problem in a systematic prespective in "intelligence feature selection by Olafson.ipynb".
 
 ### intelligence feature selection by Olafson.ipynb
+This script mimics the algorithm provided by [1] in python. For furthur information about the functions and objective we reffere you to read the paper by Ólafsson and Yang, sicne we used the exact terminalogy used in their paper.
 
-
-This repository will provide the code for feature selection using Intelliegence Nested Patitioning with Rapid Screening. To do so we first run the "RapindScreeing.py" in order to be get the intelligent sence of the features whcih are our ture features and should be included in prediction model. We will gor through the functions of each file one-by-one and bring and example to make it clear for the reader.
+### Greedy Feature Selection.ipynb
+First of all, we should confess that the name could have been selected better, since our proposed algorithm is not greedy heuristic. And it will use the modified version of [1] using rapid screening. This script provides the code for feature selection using Intelliegence Nested Patitioning with Rapid Screening. To do so we first run the "RapindScreeing.py" in order to be get the intelligent sence of the features whcih are our ture features and should be included in prediction model. We will go through the functions of each file one-by-one in one example to make it clear for the reader.
 
 
 
