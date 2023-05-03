@@ -77,6 +77,13 @@ The above illustration is for pure NP, when the sampling distribution is not aff
 It should be noted that in this version of the code we consider the weight of 1 for updateing the probabality vector, one potential idea is using the difference of MSE between in each node to update the probablity:
 $P \gets \frac{MSE_{t-1} - MSE_t}{MSE_{t-1}} * P$
 
+## Takeawys
+1. Entropy is not necessarily a good approach. We saw that for numerical datasets the entropy for each column is the same because we do not have repetitive value in each column.
+2. We replace the entropy intelligence partitioning idea with rapid screening intelligence partitioning.
+3. We either use knowledge-based NP or pure NP, meaning that we update the sampling distribution or not.
+4. We expect to converge to the optimum decision faster by applying 1) rapid screening and 2) updating sampling distribution.
+
+
 ## Refrences
 [1] S. Ólafsson and J. Yang, “Intelligent partitioning for feature selection,” INFORMS Journal on Computing, vol. 17, no. 3, pp. 339–355, 2005.
 [2] J. Pichitlamken and B. L. Nelson, “A combined procedure for optimization via simulation,” ACM Transactions on Modeling and Computer Simulation (TOMACS), vol. 13, no. 2, pp. 155–179, 2003
