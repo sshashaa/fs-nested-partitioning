@@ -75,7 +75,7 @@ The above illustration is for pure NP, when the sampling distribution is not aff
 ---------------
 
 It should be noted that in this version of the code we consider the weight of 1 for updateing the probabality vector, one potential idea is using the difference of MSE between in each node to update the probablity:
-$P \gets \frac{MSE_t - MSE_{t-1}}{MSE_{t-1}} * P$
+$P \gets \frac{MSE_{t-1} - MSE_t}{MSE_{t-1}} * P$
 
 ## Refrences
 [1] S. Ólafsson and J. Yang, “Intelligent partitioning for feature selection,” INFORMS Journal on Computing, vol. 17, no. 3, pp. 339–355, 2005.
