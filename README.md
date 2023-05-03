@@ -24,6 +24,6 @@ This repository will provide the code for feature selection using Intelliegence 
 
 
 
-Refrences:
+## Refrences
 [1] S. Ólafsson and J. Yang, “Intelligent partitioning for feature selection,” INFORMS Journal on Computing, vol. 17, no. 3, pp. 339–355, 2005.
 [2] J. Pichitlamken and B. L. Nelson, “A combined procedure for optimization via simulation,” ACM Transactions on Modeling and Computer Simulation (TOMACS), vol. 13, no. 2, pp. 155–179, 2003
