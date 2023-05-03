@@ -43,6 +43,15 @@ First of all, we should confess that the name could have been selected more care
 First step is checking the entropy;
 ![alt text](https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/entropy.PNG)
 
+The given function "solutionGenerator(n, probVector)" takes two input arguments:
+
+n: An integer value representing the number of solutions required.
+probVector: A list of probabilities, where each probability represents the likelihood of selecting a particular feature. The length of the probVector list should be equal to the number of features in the dataset.
+The function generates n solutions and returns them as a list of lists. Each solution is represented as a list of binary values (0 or 1) with the same length as the probVector list.
+
+The function iterates over the range of n and for each iteration, it generates a solution by creating a new list and appending binary values using the bernoulli() method from the scipy.stats module. The bernoulli() method generates a random binary value (0 or 1) based on the probability of selecting a particular feature. The probability of selecting each feature is specified by the probVector list.
+
+![alt text](https://github.com/sshashaa/fs-nested-partitioning/blob/main/Figures/i1.PNG)
 
 ## Refrences
 [1] S. Ólafsson and J. Yang, “Intelligent partitioning for feature selection,” INFORMS Journal on Computing, vol. 17, no. 3, pp. 339–355, 2005.
