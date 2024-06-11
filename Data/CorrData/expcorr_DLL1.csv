@@ -1,0 +1,6 @@
+"","exp.x1","exp.x2","exp.x3","exp.x4","exp.x5","exp.x6","exp.x7","exp.x8","exp.x9","exp.x10","exp.corr1","exp.corr2","exp.corr3","exp.corr4","exp.corr5"
+"corr1",1,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA
+"corr2",NA,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"corr3",NA,-1,NA,NA,NA,NA,NA,NA,-1,NA,NA,NA,NA,NA,NA
+"corr4",1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"corr5",NA,NA,-2,NA,NA,NA,NA,NA,-2,NA,NA,NA,NA,NA,NA

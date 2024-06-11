@@ -1,0 +1,6 @@
+"","coef.x1","coef.x2","coef.x3","coef.x4","coef.x5","coef.x6","coef.x7","coef.x8","coef.x9","coef.x10","coef.corr1","coef.corr2","coef.corr3","coef.corr4","coef.corr5"
+"corr1",1,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA
+"corr2",NA,-7,NA,NA,NA,-7,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"corr3",NA,-6,NA,NA,NA,NA,NA,NA,-6,NA,NA,NA,NA,NA,NA
+"corr4",10,NA,NA,NA,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"corr5",NA,NA,6,NA,NA,NA,NA,NA,6,NA,NA,NA,NA,NA,NA

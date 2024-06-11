@@ -1,0 +1,16 @@
+,1,2,3,4
+0,x3,x3,x3,x3
+1,noise6,corr1,corr1,x1
+2,corr1,x1,x1,corr1
+3,x1,noise6,x2,x2
+4,noise4,x2,noise6,noise4
+5,x2,noise4,noise4,noise6
+6,noise7,noise7,noise7,noise7
+7,noise1,noise9,noise9,noise1
+8,noise9,noise1,noise1,noise9
+9,noise5,noise8,noise3,noise3
+10,corr2,noise3,noise8,noise8
+11,noise10,noise10,noise10,noise10
+12,noise8,noise5,noise5,noise2
+13,noise2,corr2,noise2,noise5
+14,noise3,noise2,corr2,corr2

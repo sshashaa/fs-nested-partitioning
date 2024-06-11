@@ -1,0 +1,16 @@
+,1,2,3,4,5
+0,x3,x3,x3,x3,x3
+1,noise9,noise3,x1,noise2,noise8
+2,x1,noise2,noise8,x1,noise2
+3,noise4,x1,noise3,noise8,x1
+4,noise5,noise8,noise2,noise3,noise3
+5,noise6,noise5,noise5,corr2,corr2
+6,noise7,noise6,corr2,noise6,noise6
+7,noise8,noise1,noise6,noise1,noise1
+8,x2,corr2,noise1,noise7,noise7
+9,corr1,noise7,noise7,noise10,x2
+10,noise1,noise9,x2,x2,noise4
+11,noise3,x2,noise10,noise5,corr1
+12,corr2,noise10,noise9,noise4,noise9
+13,noise2,corr1,noise4,noise9,noise5
+14,noise10,noise4,corr1,corr1,noise10
